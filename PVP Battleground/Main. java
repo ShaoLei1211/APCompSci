@@ -1,0 +1,17 @@
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+   Fighter player = new Fighter("Henry");
+   Mage player_2 = new Mage("Mike");
+   Paladin player_3 = new Paladin("Jackson");
+   Priest player_4 = new Priest("Kai");
+
+   player. showstats();
+   player_2. showstats();
+   player_3. showstats();
+   player_4. showstats();
+
+
+    }
+}
