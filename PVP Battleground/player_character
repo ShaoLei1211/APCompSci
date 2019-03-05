@@ -1,0 +1,15 @@
+public abstract class Player_Character { //abstract class = not able to extend
+
+    String name;
+
+    int strength;
+    int intelligence;
+    int agility;
+
+    int hp, maxhp;
+    int mp, maxmp;
+
+    public Player_Character(){
+
+    }
+}
