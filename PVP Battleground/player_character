@@ -1,15 +1,31 @@
 public abstract class Player_Character { //abstract class = not able to extend
+    // don't privatize the superclass
+    protected String name; //private to that instance of class only
 
-    String name;
+    protected int strength;
+    protected int intelligence;
+    protected int agility;
 
-    int strength;
-    int intelligence;
-    int agility;
+    protected int hp, maxhp;
+    protected int mp, maxmp;
 
-    int hp, maxhp;
-    int mp, maxmp;
+    private static int count; // reflected in all instance  = if you want the number to be increase with your entrance, use static
 
-    public Player_Character(){
+    public Player_Character(){// constructor, allow other class to access this super abstract class
 
+    count++;
+    }
+
+    public void showstats(){
+        System.out.printf(" HP: %3d/%3d\n", hp, maxhp);
+        System.out.printf(" MP: %3d/%3d\n", mp, maxmp);
+        System.out.printf("STR: %3d  INT: %3d  AGI: %3d  ",strength,intelligence,agility);
+
+    }
+
+    public static int numCharacter(){//access private static
+
+
+        return count;
     }
 }
