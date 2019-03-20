@@ -1,0 +1,16 @@
+public abstract class Product {
+    protected String item;
+    protected int PLU_code;
+    protected double price;
+    protected String type;
+    protected int quantity;
+    boolean tax;
+
+    public void showstats(){
+        System.out.println("Item: " + item);
+        System.out.println("PLU Code: "+ PLU_code);
+        System.out.println("price: "+ price);
+        System.out.println("type: "+ type);
+        System.out.println("quantity left in stock: "+ quantity);
+    }
+}
