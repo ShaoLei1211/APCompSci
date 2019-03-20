@@ -1,0 +1,12 @@
+public class Yellow_Squash extends Product{
+
+    public Yellow_Squash(){
+        item = "Yellow Squash";
+        PLU_code = 4784;
+        price = 0.89;
+        type = "Vegetable";
+        quantity = 500;
+
+
+    }
+}
