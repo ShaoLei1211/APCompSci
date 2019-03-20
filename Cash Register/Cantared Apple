@@ -1,0 +1,10 @@
+public class Cantared_Apple extends Product{
+
+    public Cantared_Apple(){
+        item = "Cantared Apple";
+        PLU_code = 3002;
+        price = 1.49;
+        type = "fruit";
+        quantity = 500;
+    }
+}
