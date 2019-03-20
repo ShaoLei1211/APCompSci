@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Fighter extends Player_Character{
 
-    int constitution;
+   private int constitution; // can be accessed within the class; but access from the main class/super class will be denied
 
     public Fighter(String newName) {
 
@@ -24,8 +24,8 @@ public class Fighter extends Player_Character{
 
     public void showstats() {
         System.out.printf("%s, a Fighter:\n",name);
-        System.out.printf("STR: %3d  INT: %3d  AGI: %3d  CON: %3d\n",strength,intelligence,agility,constitution);
-        System.out.printf(" HP: %3d/%3d\n", hp, maxhp);
-        System.out.printf(" MP: %3d/%3d\n\n", mp, maxmp);
+        super.showstats();
+        System.out.printf("CON: %3d\n\n",constitution);
+
     }
 }
