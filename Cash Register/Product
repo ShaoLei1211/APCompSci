@@ -11,6 +11,6 @@ public abstract class Product {
         System.out.println("PLU Code: "+ PLU_code);
         System.out.println("price: "+ price);
         System.out.println("type: "+ type);
-        System.out.println("quantity left in stock: "+ quantity);
+        System.out.println("quantity left in stock: "+ quantity+"\n");
     }
 }
