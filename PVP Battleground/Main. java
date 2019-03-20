@@ -1,17 +1,23 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-   Fighter player = new Fighter("Henry");
-   Mage player_2 = new Mage("Mike");
-   Paladin player_3 = new Paladin("Jackson");
-   Priest player_4 = new Priest("Kai");
 
-   player. showstats();
-   player_2. showstats();
-   player_3. showstats();
-   player_4. showstats();
+        ArrayList<Player_Character> players = new ArrayList<Player_Character>();
+        players. add(new Fighter("Mike"));
+        players. add(new Mage("Williams"));
+        players. add(new Paladin("Ethan"));
+        players. add(new Priest("Frank"));
 
+        System.out.println("There are "+players.size()+" characters created in total.\n");
 
+        for (Player_Character x :players){//every object is referred as x, so it can check
+            if (x instanceof Priest){
+                System.out.println("If you are looking for a Priest...\n");
+                x.showstats();
+            }
+        }
     }
 }
+
