@@ -3,8 +3,8 @@ import java.util.Random;
 public class Paladin extends Player_Character{
 
 
-    int wisdom;
-    int constitution;
+    private int wisdom;
+    private int constitution;
 
     public Paladin(String newName) {
 
@@ -27,9 +27,9 @@ public class Paladin extends Player_Character{
 
     public void showstats() {
         System.out.printf("%s, a Paladin:\n",name);
-        System.out.printf("STR: %3d  INT: %3d  AGI: %3d  WIS: %3d CON: %3d\n",strength,intelligence,agility,wisdom,constitution);
-        System.out.printf(" HP: %3d/%3d\n", hp, maxhp);
-        System.out.printf(" MP: %3d/%3d\n\n", mp, maxmp);
+        super.showstats();
+        System.out.printf("WIS: %3d CON: %3d\n",wisdom,constitution);
+
     }
 }
 
